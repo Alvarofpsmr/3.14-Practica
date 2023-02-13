@@ -5,7 +5,12 @@ body{
 p.texto::first-line{
     color:red;
 }
-
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+}
 span.S{
     font-size: 50px;
 }
@@ -34,7 +39,19 @@ a.Link:visited{
 h3.contador{
     counter-reset: cuenta-productos;
 }
-p.productos::before{
+p.producto::before{
     content: counter(cuenta-productos)".";
     counter-increment: cuenta-productos;
+}
+.vida:hover{
+    background-color: yellow;
+    color: red;
+}
+.productos:hover{
+    background-color: yellow;
+    color: red;
+}
+.empresas:hover{
+    background-color: yellow;
+    color: red;
 }
